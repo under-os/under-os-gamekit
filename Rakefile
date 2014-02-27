@@ -11,6 +11,7 @@ Motion::Project::App.setup do |app|
   app.identifier = 'com.under-os.gamekit'
   app.specs_dir  = './spec/lib'
   app.version    = UnderOs::Gamekit::VERSION
+  app.frameworks += ['SpriteKit', 'AVFoundation']
 
   app.codesign_certificate = ENV['RUBYMOTION_CERTIFICATE']
   app.provisioning_profile = ENV['RUBYMOTION_PROFILE']
@@ -18,7 +19,5 @@ Motion::Project::App.setup do |app|
   if ARGV[0] == 'spec'
     app.name       = 'uos-gamekit-spec'
     app.identifier = 'com.under-os.gamekit.spec'
-    # app.files << 'spec/assets/test_page.rb'
-    # app.resources_dirs.unshift "./spec/assets/"
   end
 end

@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/under_os_gamekit', __FILE__)
+require File.expand_path('../lib/under_os/gamekit', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name          = "under-os-gamekit"
@@ -16,7 +16,8 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}) { |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
 
+  gem.add_dependency 'under-os-core'
+
   gem.add_development_dependency 'rake'
-  gem.add_development_dependency 'motion-facon'
 
 end

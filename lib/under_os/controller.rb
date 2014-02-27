@@ -12,7 +12,7 @@ class UnderOs::GamekitController < UIViewController
 
   def viewWillLayoutSubviews
     super
-    view.presentScene SKScene.alloc.initWithSize(view.bounds.size)
+    view.presentScene @app.config.home_scene.new._
   end
 
   def prefersStatusBarHidden

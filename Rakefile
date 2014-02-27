@@ -12,6 +12,7 @@ Motion::Project::App.setup do |app|
   app.specs_dir  = './spec/lib'
   app.version    = UnderOs::Gamekit::VERSION
   app.frameworks += ['SpriteKit', 'AVFoundation']
+  app.interface_orientations = [:landscape_left]
 
   app.codesign_certificate = ENV['RUBYMOTION_CERTIFICATE']
   app.provisioning_profile = ENV['RUBYMOTION_PROFILE']

@@ -3,7 +3,7 @@ describe UnderOs::Gamekit::Scene do
     @scene = UnderOs::Gamekit::Scene.new
   end
 
-  describe "raw SKScene" do
+  describe "#_" do
     before do
       @_ = @scene._
     end

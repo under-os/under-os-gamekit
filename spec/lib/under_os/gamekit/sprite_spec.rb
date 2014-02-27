@@ -4,7 +4,7 @@ describe UnderOs::Gamekit::Sprite do
     @sprite = UnderOs::Gamekit::Sprite.new('test.png')
   end
 
-  describe "raw sprite object" do
+  describe "#_" do
     before do
       @_ = @sprite._
     end

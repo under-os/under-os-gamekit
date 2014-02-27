@@ -22,9 +22,9 @@ class UnderOs::GamekitController < UIViewController
   class MainView < SKView
     def initWith(config)
       init
-      self.showsDrawCount = true
-      self.showsNodeCount = true
-      self.showsFPS = true
+      self.showsDrawCount = config.show_draws
+      self.showsNodeCount = config.show_nodes
+      self.showsFPS       = config.show_fps
       self
     end
   end

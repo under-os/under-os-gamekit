@@ -4,15 +4,20 @@ PATH
     under-os-gamekit (0.0.0)
       under-os-core
 
+PATH
+  remote: ../under-os/gems/under-os-core
+  specs:
+    under-os-core (1.4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
     rake (10.1.1)
-    under-os-core (1.4.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rake
+  under-os-core!
   under-os-gamekit!

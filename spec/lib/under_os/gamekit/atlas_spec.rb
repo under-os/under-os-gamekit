@@ -1,6 +1,6 @@
 describe UnderOs::Gamekit::Atlas do
   before do
-    @atlas = UnderOs::Gamekit::Atlas.new("Dummy")
+    @atlas = UnderOs::Gamekit::Atlas.new("Test")
   end
 
   describe "#_" do

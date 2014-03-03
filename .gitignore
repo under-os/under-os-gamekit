@@ -2,3 +2,4 @@ build
 .repl_history
 *.gem
 .bundle
+.DS_Store

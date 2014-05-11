@@ -1,4 +1,9 @@
 class UnderOs::Gamekit::Label
+  include UnderOs::Gamekit::Sprite::Wrapper
+  include UnderOs::Gamekit::Sprite::Positioning
+
+  include UnderOs::Event::Listener
+
   DEFAULT_FONT = "Chalkduster"
 
   attr_reader :_

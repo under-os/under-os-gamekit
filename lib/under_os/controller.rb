@@ -1,4 +1,5 @@
 class UnderOs::GamekitController < UIViewController
+  include UnderOs::Event::Touch::Listener
 
   def initWith(app)
     @app = app

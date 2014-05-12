@@ -3,6 +3,7 @@ class UnderOs::Gamekit::Scene
   include Manipulation
 
   include UnderOs::Event::Listener
+  include UnderOs::Gamekit::Events
 
   Sprite = UnderOs::Gamekit::Sprite
   Label  = UnderOs::Gamekit::Label

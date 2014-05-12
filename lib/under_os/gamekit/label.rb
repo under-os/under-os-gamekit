@@ -3,6 +3,7 @@ class UnderOs::Gamekit::Label
   include UnderOs::Gamekit::Sprite::Positioning
 
   include UnderOs::Event::Listener
+  include UnderOs::Gamekit::Events
 
   DEFAULT_FONT = "Chalkduster"
 

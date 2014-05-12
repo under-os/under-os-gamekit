@@ -5,6 +5,7 @@ class UnderOs::Gamekit::Sprite
   include Traversing
 
   include UnderOs::Event::Listener
+  include UnderOs::Gamekit::Events
 
   attr_reader :_
 

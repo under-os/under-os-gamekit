@@ -1,5 +1,7 @@
 # UnderOS Gamekit
 
+__NOTE__: this is a work in progress thingy!
+
 This project aims to be a part of the [under-os](under-os.com) project
 and wrap the iOS SpriteKit framework.
 
